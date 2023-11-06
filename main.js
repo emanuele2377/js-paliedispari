@@ -1,33 +1,11 @@
-const listaParole = ["anna", "ada", "aia", "dvd"];
+const inserisciParola = prompt("Inserisci parola");  
+String reversed = "";
 
-const inserisciParola = prompt("Inserisci parola");
+    for (let i = inserisciParola.length() - 1; i >= 0 ; i-- ) 
+      
+      reversed += inserisciParola.charAt(i);
+    
+    return inserisciParola.equals("");
 
-let autorizzato = false;
-
-
-for (let i = 0; i < listaParole.length; i++) {
-
-    const element = listaParole[i];
-
-    if (element == inserisciParola) {
-        autorizzato = true;
-        break;
-    }
-
-}
-
-let parola = "";
-for (let i = 0; i < inserisciParola.length; i++) {
-    const carattere = inserisciParola[i];
-
-    if (carattere == "@") {
-        break;
-    }
-    parola += carattere;
-}
-
-if (autorizzato) {
-    alert("e palindroma, " + inserisciParola);
-} else {
-    alert("Non e palindroma");
-}
+    
+     
