@@ -1,11 +1,11 @@
 const inserisciParola = prompt("Inserisci parola");  
-String reversed = "";
+let reversed = "inserisciParola";
 
     for (let i = inserisciParola.length() - 1; i >= 0 ; i-- ) 
       
       reversed += inserisciParola.charAt(i);
     
-    return inserisciParola.equals("");
+    return inserisciParola.equals("inserisciParola");
 
     
      
